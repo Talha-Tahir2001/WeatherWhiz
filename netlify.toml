@@ -1,0 +1,12 @@
+# netlify.toml
+
+[build]
+  publish = "dist/"  
+  command = "npm run build:prod"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://yahoo-weather5.p.rapidapi.com/weather:splat"
+  status = 200
+  force = true
+  
