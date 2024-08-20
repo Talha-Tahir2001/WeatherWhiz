@@ -6,12 +6,13 @@
   publish = "dist/browser"  
 
 [[redirects]]
-  from = "/api/*"
+  from = "/*"
   to = "https://yahoo-weather5.p.rapidapi.com/weather/:splat"
   status = 200
   force = true
-  headers = { 
-    X-RapidAPI-Host = ":XRapidAPIHostHeaderValue", 
-    X-RapidAPI-Key = ":XRapidAPIKeyHeaderValue"
-  }
+  headers = [
+    { key = "X-RapidAPI-Host", value = ":XRapidAPIHostHeaderValue" },
+    { key = "X-RapidAPI-Key", value = ":XRapidAPIKeyHeaderValue" }
+  ]
+
   
