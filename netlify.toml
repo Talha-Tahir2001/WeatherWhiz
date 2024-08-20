@@ -10,8 +10,8 @@
   to = "https://yahoo-weather5.p.rapidapi.com/weather/:splat"
   status = 200
   force = true
-  headers = [
-    { key = "X-RapidAPI-Host", value = ":XRapidAPIHostHeaderValue" },
-    { key = "X-RapidAPI-Key", value = ":XRapidAPIKeyHeaderValue" }
-  ]
+  headers = { 
+    X-RapidAPI-Host = ":XRapidAPIHostHeaderValue", 
+    X-RapidAPI-Key = ":XRapidAPIKeyHeaderValue"
+  }
   
