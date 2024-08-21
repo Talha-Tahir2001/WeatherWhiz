@@ -6,8 +6,8 @@
   publish = "dist/browser"  
 
 [[redirects]]
-  from = "/*"
-  to = "https://yahoo-weather5.p.rapidapi.com/weather/:splat"
+  from = "https://yahoo-weather5.p.rapidapi.com/weather/:splat"
+  to = "/index.html"
   status = 200
   force = true
   headers = [
