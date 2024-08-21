@@ -34,6 +34,7 @@ export class AppComponent implements OnInit {
     .subscribe({
       next: (response) => {
         this.weatherData = response
+        console.log(response)
 
       } 
     });
