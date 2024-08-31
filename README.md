@@ -18,7 +18,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## API Integration
 
-This app integrates with the OpenWeather API. Ensure you have an API key, which should be stored in the `environment.ts` file.
+This app integrates with the Yahoo Weather API. Ensure you have an API key, which should be stored in the `environment.ts` file.
 
 ## Code scaffolding
 
