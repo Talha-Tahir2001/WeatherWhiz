@@ -9,7 +9,8 @@ This project is an Angular 18 application that provides weather information usin
 -   **Responsive Design**: Optimized for different screen sizes, providing a seamless experience on both desktop and mobile devices.
 
 ## WeatherWhiz
-Check it out at [Weather Whiz](https://weather-whiz-woad.vercel.app/) and give it a star!!!
+Check it out at [Weather Whiz](https://weather-whiz-woad.vercel.app/) and give it a 🌟!!!
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
 
 ## Development server
