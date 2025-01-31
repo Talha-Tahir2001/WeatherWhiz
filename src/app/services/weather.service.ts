@@ -8,20 +8,21 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class WeatherService {
-
   constructor(private http: HttpClient) { }
 
-  getWeatherData(cityName: string) : Observable<WeatherData> {
-    return this.http.get<WeatherData>(environment.WeatherAPIBaseUrl, {
-      headers: new HttpHeaders()
-      .set(environment.XRapidAPIHostHeaderName, environment.
-        XRapidAPIHostHeaderValue)
-      .set(environment.XRapidAPIKeyHeaderName, environment.
-        XRapidAPIKeyHeaderValue),
-        params: new HttpParams()
-        .set('location', cityName)
-        .set('format', 'json')
-        .set('u', 'c')
-    })
+  getWeatherData(cityName: string): Observable<WeatherData> {
+    const headers = new HttpHeaders()
+      .set(environment.XRapidAPIHostHeaderName, environment.XRapidAPIHostHeaderValue)
+      .set(environment.XRapidAPIKeyHeaderName, environment.XRapidAPIKeyHeaderValue);
+
+    const params = new HttpParams()
+      .set('location', cityName)
+      .set('format', 'json')
+      .set('u', 'c');  // Celsius temperature unit
+
+    return this.http.get<WeatherData>(
+      environment.WeatherAPIBaseUrl,
+      { headers, params }
+    );
   }
 }

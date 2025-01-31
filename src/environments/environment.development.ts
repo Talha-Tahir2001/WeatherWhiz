@@ -1,5 +1,4 @@
 export const environment = {
-    production: false,
     WeatherAPIBaseUrl: 'YOUR_BASE_URL',
     XRapidAPIHostHeaderName: 'YOUR_API_HOST_HEADER_NAME',
     XRapidAPIHostHeaderValue: 'YOUR_API_HOST_HEADER_VALUE',
