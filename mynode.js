@@ -12,7 +12,7 @@ dotenv.config({ path: 'src/.env' });
 
 // Environment file content
 const envFile = `export const environment = {
-    WeatherApiBaseUrl: '${process.env.WeatherApiBaseUrl}',
+    WeatherAPIBaseUrl: '${process.env.WeatherAPIBaseUrl}',
     XRapidAPIHostHeaderName: '${process.env.XRapidAPIHostHeaderName}',
     XRapidAPIHostHeaderValue: '${process.env.XRapidAPIHostHeaderValue}',
     XRapidAPIKeyHeaderName: '${process.env.XRapidAPIKeyHeaderName}',
